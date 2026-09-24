@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+<meta name="theme-color" content="#f4f1ea" />
+<meta name="description" content="Portofolio Ahmad Zidan — Frontend Engineer, penikmat kopi susu, dan pemburu cerita." />
+<meta property="og:title" content="Ahmad Zidan — Portofolio" />
+<meta property="og:description" content="Frontend dev & penikmat kopi susu." />
+<meta property="og:type" content="website" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Rizky — Portofolio & Keseharian</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<div class="noise"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+
+    <div class="nav-left">
+      <a href="#" class="logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">Zdan<em>.dev</em></span>
+      </a>
+      <span class="nav-status" title="Available for collab">
+        <i></i> open
+      </span>
+    </div>
+
+    <div class="nav-center">
+      <a href="#about"  class="nav-link" data-target="about">about</a>
+      <a href="#cv"     class="nav-link" data-target="cv">cv</a>
+      <a href="#hobi"   class="nav-link" data-target="hobi">hobi</a>
+      <a href="#kontak" class="nav-link" data-target="kontak">kontak</a>
+      <span class="nav-indicator" id="navIndicator"></span>
+    </div>
+
+    <div class="nav-right">
+      <span class="nav-chip nav-clock" id="navClock">--:--</span>
+    </div>
+
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about">about</a>
+    <a href="#cv">cv</a>
+    <a href="#hobi">hobi</a>
+    <a href="#kontak">kontak</a>
+    <a href="mailto:ahmadzidanbacotk@gmail.com"> </a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">📍 Jakarta · Available for collab</div>
+    <h1 class="hero-title">
+      <span class="line"><em>Halo,</em> gue</span>
+      <span class="line"><span class="hl">Zidan</span> —</span>
+      <span class="line">bikin <span class="strike">kode</span> & <span class="hl2">cerita.</span></span>
+    </h1>
+    <p class="hero-sub">
+      Frontend dev, penikmat kopi susu, dan orang yang percaya bahwa <strong>detail kecil</strong> bikin produk terasa hidup.
+    </p>
+    <div class="hero-cta">
+      <a href="#cv" class="btn magnetic">Lihat CV ↓</a>
+      <a href="#hobi" class="btn btn-ghost magnetic">Hobi gue</a>
+    </div>
+  </div>
+
+<div class="lanyard-wrap" id="lanyardWrap">
+  <div class="lanyard-pivot">
+    <div class="lanyard" id="lanyard">
+      <div class="lanyard-strap"></div>
+      <div class="lanyard-clip"></div>
+      <div class="lanyard-card" id="lanyardCard">
+        <div class="card-hole"></div>
+        <div class="card-inner">
+          <div class="card-photo">
+            <img src="foto.jpeg" alt="Foto Zidan" onerror="this.style.display='none';this.parentElement.classList.add('no-photo');" />
+            <div class="photo-fallback">Z</div>
+          </div>
+          <div class="card-info">
+            <div class="card-brand">✦ Zdan.dev</div>
+            <h3 class="card-name">Ahmad Zidan</h3>
+            <p class="card-role">Frontend Engineer</p>
+            <div class="card-meta">
+              <span>ID · 2025</span>
+              <span>JKT</span>
+            </div>
+            <div class="card-barcode"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lanyard-hint">✦ drag gue</div>
+</div>
+</header>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>✦ JavaScript</span><span>✦ React</span><span>✦ UI Design</span><span>✦ Coffee</span><span>✦ Photography</span><span>✦ Lo-fi</span><span>✦ Indie Games</span><span>✦ Reading</span>
+    <span>✦ JavaScript</span><span>✦ React</span><span>✦ UI Design</span><span>✦ Coffee</span><span>✦ Photography</span><span>✦ Lo-fi</span><span>✦ Indie Games</span><span>✦ Reading</span>
+  </div>
+</div>
+
+<section id="about" class="section">
+  <div class="section-label">01 / About</div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h2>Orang yang suka <em>ngulik</em> hal kecil sampai bener.</h2>
+      <p>
+        Gue mulai ngoding dari iseng modif blog template waktu SMK. Sekarang jadi kerjaan yang gue nikmatin tiap hari. Fokus gue di <strong>frontend engineering</strong> dengan rasa desain — bukan cuma bikin jalan, tapi bikin <em>enak dipakai</em>.
+      </p>
+      <p>
+        Di luar layar, gue sering ketemu di KopKen, bawa Novel atau Komik, atau lagi ngulik game indie yang underrated.
+      </p>
+    </div>
+    <div class="about-card reveal">
+      <div class="card-header">~/now</div>
+      <ul class="now-list">
+        <li><span>🎧</span> Dengerin: <em>Story Of My Life — One Deraction</em></li>
+        <li><span>📖</span> Baca: <em>The Design of Everyday Things</em></li>
+        <li><span>☕</span> Ngopi: <em>Kopi susu, normal gula</em></li>
+        <li><span>🎮</span> Main: <em>Hollow Knight (lagi ngulang)</em></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="cv" class="section section-dark">
+  <div class="section-label">02 / Curriculum Vitae</div>
+  <h2 class="section-title reveal">Jejak <em>kerja</em> & <em>belajar</em>.</h2>
+
+  <div class="cv-tabs">
+    <button class="tab active" data-tab="exp">Pengalaman</button>
+    <button class="tab" data-tab="edu">Pendidikan</button>
+    <button class="tab" data-tab="skill">Skill</button>
+  </div>
+
+  <div class="cv-panel active" id="exp">
+    <div class="cv-item reveal">
+      <div class="cv-year">2024 — sekarang</div>
+      <div class="cv-content">
+        <h3>Frontend Engineer</h3>
+        <p>Bangun design system internal, migrasi legacy ke React + TypeScript, dan jaga performa aplikasi tetap di bawah 2s LCP.</p>
+        <div class="tags"><span>React</span><span>TS</span><span>Vite</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-panel" id="edu">
+    <div class="cv-item">
+      <div class="cv-year">2024 — 2026</div>
+      <div class="cv-content">
+        <h3>SMK RPL</h3>
+        <p class="cv-company">SMKN 65 Jakarta</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-panel" id="skill">
+    <div class="skill-grid">
+      <div class="skill"><div class="skill-name">JavaScript / TS</div><div class="bar"><i style="--w:92%"></i></div></div>
+      <div class="skill"><div class="skill-name">React / Next.js</div><div class="bar"><i style="--w:88%"></i></div></div>
+      <div class="skill"><div class="skill-name">CSS / Tailwind</div><div class="bar"><i style="--w:95%"></i></div></div>
+      <div class="skill"><div class="skill-name">Figma / UI Design</div><div class="bar"><i style="--w:80%"></i></div></div>
+      <div class="skill"><div class="skill-name">Node.js</div><div class="bar"><i style="--w:70%"></i></div></div>
+      <div class="skill"><div class="skill-name">Fotografi</div><div class="bar"><i style="--w:75%"></i></div></div>
+    </div>
+  </div>
+
+  <a href="file:///C:/Users/ahmad/Downloads/CV_Zidan.pdf" class="btn btn-download magnetic">⬇ Download CV (PDF)</a>
+</section>
+
+<section id="hobi" class="section">
+  <div class="section-label">03 / Hobi & Kesukaan</div>
+  <h2 class="section-title reveal">Hal-hal yang bikin gue <em>hidup.</em></h2>
+
+  <div class="hobi-grid">
+    <div class="hobi-card reveal" style="--c:#ff5c39">
+      <div class="hobi-emoji">☕</div>
+      <h3>Kopi Rimba</h3>
+      <p>gula aren, kadang kopi susu. Bukan soal gaya — soal ritual 5 menit buat napas.</p>
+    </div>
+    <div class="hobi-card reveal" style="--c:#2b6cff">
+      <div class="hobi-emoji">📷</div>
+      <h3>Film 500 Days Of Summer</h3>
+      <p>Cerita nya betapa sulitnya beradaptasi dengan lingkungan yang bukan tempat kita, setelah berani mencoba untuk menggapai impian baru lah akan menemukan kesenangan.</p>
+    </div>
+    <div class="hobi-card reveal" style="--c:#1a1a1a">
+      <div class="hobi-emoji">🎮</div>
+      <h3>Indie Games</h3>
+      <p>Hollow Knight, Celeste, Disco Elysium. Belajar narasi & desain level dari game kecil.</p>
+    </div>
+    <div class="hobi-card reveal" style="--c:#f5b800">
+      <div class="hobi-emoji">📚</div>
+      <h3>Baca Novel</h3>
+      <p>belakangan aku sedang baca Novel yang romantic, Favorit: <em>0 MDPL</em>.</p>
+    </div>
+    <div class="hobi-card reveal" style="--c:#00b894">
+      <div class="hobi-emoji">🎧</div>
+      <h3>Lo-fi & Jazz</h3>
+      <p>Playlist kerja isinya Nujabes, Khruangbin, dan kadang bossa nova jam 2 pagi.</p>
+    </div>
+    <div class="hobi-card reveal" style="--c:#8e44ad">
+      <div class="hobi-emoji">🚲</div>
+      <h3>Gowes Weekend</h3>
+      <p>Rute favorit: Sudirman — Senayan pagi jam 6. Sepi, adem, otak fresh.</p>
+    </div>
+  </div>
+</section>
+
+<section id="kontak" class="section section-dark contact">
+  <div class="section-label">04 / Kontak</div>
+  <h2 class="section-title reveal">Kolaborasi? <em>Ngobrol?</em> Ayok.</h2>
+  <p class="contact-sub reveal">Gue terbuka buat project freelance, kolaborasi komunitas, atau sekadar ngopi bareng.</p>
+
+  <div class="contact-grid">
+    <a class="contact-item magnetic" href="mailto:ahmadzidanbacotk@gmail.com">
+      <span class="contact-label">Email</span>
+      <span class="contact-value">ahmadzidanbacotk@gmail.com</span>
+    </a>
+    <a class="contact-item magnetic" href="https://www.instagram.com/ahmdzidann_/">
+      <span class="contact-label">Instagram</span>
+      <span class="contact-value">@ahmdzidann_</span>
+    </a>
+    <a class="contact-item magnetic" href="https://github.com/Kazlipe">
+      <span class="contact-label">GitHub</span>
+      <span class="contact-value">github.com/Kazlipe</span>
+    </a>
+  </div>
+
+  <div class="easter-egg" title="coba hover atau klik berkali-kali">
+    <span id="eggTrigger">(psst... ada rahasia kecil di sini)</span>
+    <div id="eggMsg" class="egg-msg">✨ Makasih udah kepo. Kamu orang yang tepat buat diajak ngopi. ✨</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© 2025 Rizky — Dibuat pakai ☕ & ✦</div>
+  <div class="footer-note">No template. No AI slop. Just code.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
